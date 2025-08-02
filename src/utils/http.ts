@@ -22,7 +22,6 @@ const httpInterceptor = {
     if (token) {
       options.header.Authorization = token
     }
-    console.log(`请求拦截: ${options.url}`, options)
   },
 }
 uni.addInterceptor('request', httpInterceptor)
